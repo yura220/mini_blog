@@ -1,0 +1,112 @@
+#app h1 {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 27px 0 26px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* background: linear-gradient(to right, #ff85b3, #d88f66);
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: #e7547c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#app h1::before {
+  content: '';
+  display: inline-block;
+  background-image: url(/img/folder_open.png);
+  width: 26px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#app a {
+  color: #333;
+}
+
+.new-button {
+  /* border: none;
+  outline: none;
+  background: var(--bg-color);
+  box-shadow: 6px 6px 16px #c0b3ca,
+    -6px -6px 16px #f2eaff,
+    0 4px 8px rgba(128, 128, 255, 0.25);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; */
+  display: block;
+  background: #fff1c2;
+  border: 1px solid #e4c977;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px 12px 4px 12px;
+  font-weight: 500;
+  box-shadow: 2px 2px 0 #dca7c6;
+  margin-bottom: 20px;
+}
+.new-button::before{
+  content: '';
+  background-image: url(/img/edit.png);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.new-button:hover {
+  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+    inset -1px -1px 0 var(--shadow-light);
+  background: #ffecb0;
+}
+
+.new-button:active {
+  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+    inset -1px -1px 0 var(--shadow-light);
+  background: #ffecb0;
+}
+
+#app ul {
+  padding: 0;
+}
+
+#app li {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+
+#app li:nth-child(3n + 1) {
+  border-left: 10px solid #ffb3d9 !important;
+}
+
+#app li:nth-child(3n + 2) {
+  border-left: 10px solid #e6d6ff !important;
+}
+
+#app li:nth-child(3n + 3) {
+  border-left: 10px solid #fce28d !important;
+}
+
+#app li::before {
+  background: #ffb3d9;
+  width: 6px;
+  height: 6px;
+  display: block;
+}
+
+#app li a {}
