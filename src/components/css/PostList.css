@@ -14,7 +14,7 @@
 }
 
 #app h1::before {
-  content: '';
+  content: "";
   display: inline-block;
   background-image: url(/img/folder_open.png);
   width: 26px;
@@ -54,8 +54,8 @@
   box-shadow: 2px 2px 0 #dca7c6;
   margin-bottom: 20px;
 }
-.new-button::before{
-  content: '';
+.new-button::before {
+  content: "";
   background-image: url(/img/edit.png);
   display: inline-block;
   width: 25px;
@@ -65,13 +65,15 @@
   background-repeat: no-repeat;
 }
 .new-button:hover {
-  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+  box-shadow:
+    inset 1px 1px 0 var(--shadow-dark),
     inset -1px -1px 0 var(--shadow-light);
   background: #ffecb0;
 }
 
 .new-button:active {
-  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+  box-shadow:
+    inset 1px 1px 0 var(--shadow-dark),
     inset -1px -1px 0 var(--shadow-light);
   background: #ffecb0;
 }
@@ -109,4 +111,5 @@
   display: block;
 }
 
-#app li a {}
+#app li a {
+}

@@ -3,14 +3,18 @@ form {
   flex-direction: column;
 }
 
-.neu-card>h2 {
+.neu-card > h2 {
   color: #313131;
   margin-top: 25px;
 }
-.neu-card>p{margin-bottom: 30px;}
-.neu-input {}
+.neu-card > p {
+  margin-bottom: 30px;
+}
+.neu-input {
+}
 
-.neu-textarea {}
+.neu-textarea {
+}
 
 .neu-input::placeholder,
 .neu-textarea::placeholder {
@@ -49,18 +53,22 @@ form {
   line-height: 1.5;
 }
 .sub-button:hover {
-  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+  box-shadow:
+    inset 1px 1px 0 var(--shadow-dark),
     inset -1px -1px 0 var(--shadow-light);
   background: #ffecb0;
 }
 
 .sub-button:active {
-  box-shadow: inset 1px 1px 0 var(--shadow-dark),
+  box-shadow:
+    inset 1px 1px 0 var(--shadow-dark),
     inset -1px -1px 0 var(--shadow-light);
   background: #ffecb0;
 }
 
-.edit,.delete{display: inline-flex;
+.edit,
+.delete {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 97px;
@@ -68,8 +76,8 @@ form {
 }
 
 .edit::before,
-.delete::before{
-  content: '';
+.delete::before {
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -78,6 +86,10 @@ form {
   padding-right: 4px;
 }
 
-.edit::before{background-image: url(/img/build.png);}
+.edit::before {
+  background-image: url(/img/build.png);
+}
 
-.delete::before{background-image: url(/img/delete.png);}
+.delete::before {
+  background-image: url(/img/delete.png);
+}

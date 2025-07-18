@@ -167,7 +167,7 @@ footer {
 }
 
 /* 모바일반응형 768 */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   section {
     height: calc(100vh - 100px);
   }
