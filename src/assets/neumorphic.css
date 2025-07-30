@@ -50,6 +50,9 @@ body {
   margin-bottom: 12px;
   padding: 12px;
   position: relative;
+  width: 335px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .neu-button {
